@@ -96,9 +96,16 @@
     </table>
 
     <h3>Formularios</h3>
-    <!--  -->
-    form/a
+    <!-- form:get[action=/action_page.php]>label[for=fname]{First name:}+input:t#fname[name=fname]+input:s[value=Submit] -->
+    <form action="/action_page.php" method="get"><label for="fname">First name:</label><input type="text" name="fname" id="fname"><input type="submit" value="Submit"></form>
 
+    <!-- Después he separado las líneas manualmente: -->
+    <form action="/action_page.php" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" name="fname" id="fname">
+
+        <input type="submit" value="Submit">
+    </form>
 
 </body>
 </html>
